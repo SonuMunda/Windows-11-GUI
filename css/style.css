@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,13 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Hide Scrollbar */
 ::-webkit-scrollbar {
   display: none;
 }
 
+/* GUI Wrapper */
 .gui-wrapper {
   height: 100vh;
   width: 100%;
@@ -26,6 +30,7 @@ body {
   width: 100%;
 }
 
+/* Start Menu */
 #start-menu {
   position: fixed;
   display: flex;
@@ -66,18 +71,20 @@ body {
   border-bottom: 3px solid rgb(0, 120, 215);
 }
 
+/* Pinned Apps */
 .pinned-apps .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 30px 0 10px 0;
 }
+
 .pinned-apps .title button {
   background-color: white;
   border: none;
   outline: none;
-  padding: 5px;
-  border-radius: 8px;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 .pinned-apps .apps {
@@ -87,7 +94,6 @@ body {
   align-items: center;
   overflow-y: scroll;
 }
-
 
 .pinned-apps .apps .app {
   display: flex;
@@ -103,18 +109,20 @@ body {
   height: 42px;
 }
 
+/* Recommended Apps */
 .recommended .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 30px 0 10px 0;
 }
+
 .recommended .title button {
   background-color: white;
   border: none;
   outline: none;
-  padding: 5px;
-  border-radius: 8px;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 .recommend-list .list-item {
@@ -129,6 +137,7 @@ body {
   margin: 4px;
 }
 
+/* Bottom Menu Area */
 .bottom-menu-area {
   display: flex;
   align-items: center;
@@ -138,6 +147,7 @@ body {
   padding: 4px 20px;
 }
 
+/* Taskbar */
 .taskbar {
   position: fixed;
   bottom: 0;
@@ -152,6 +162,7 @@ body {
 .taskbar .taskbar-center .taskbar-list {
   display: flex;
 }
+
 .taskbar-list .list-item {
   padding: 5px 8px;
   display: flex;
@@ -219,6 +230,7 @@ body {
   margin-left: 10px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1279px) {
   #start-menu {
     width: 60%;
@@ -232,9 +244,10 @@ body {
 }
 
 @media screen and (max-width: 512px) {
-  .taskbar{
+  .taskbar {
     justify-content: center;
   }
+
   .taskbar-left {
     display: none;
   }
@@ -243,7 +256,7 @@ body {
     overflow-x: scroll;
   }
 
-  .taskbar-right{
+  .taskbar-right {
     width: 80px;
     overflow-x: scroll;
   }

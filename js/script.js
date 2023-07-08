@@ -1,7 +1,9 @@
+// Get current date and display it in the taskbar
 let date = new Date();
 let currDate = date.toLocaleDateString();
-
 document.getElementById("taskbar-date").innerHTML = currDate;
+
+// Get current time and display it in the taskbar
 function getCurrentTime() {
   let date = new Date();
   let hours = date.getHours();
@@ -17,8 +19,10 @@ function getCurrentTime() {
   document.getElementById("taskbar-time").innerHTML = currTime;
 }
 
+// Refresh the current time every second
 setInterval(getCurrentTime, 1000);
 
+// Function to open/close the Start Menu
 const openStartMenu = () => {
   let startMenu = document.getElementById("start-menu");
   let startBtn = document.getElementById("start");
