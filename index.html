@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window 11 GUI</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Windows Icons/Start.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <section class="gui-wrapper">
+      <div class="container">
+        <div id="start-menu" style="bottom: -100vh">
+          <div class="container">
+            <div class="searchbar">
+              <div class="icon">
+                <img
+                  src="./images/Windows Icons/magnifier-search-zoom_110300.png"
+                />
+              </div>
+              <input type="search" placeholder="Type here to search" />
+            </div>
+            <div class="pinned-apps">
+              <div class="title">
+                <label for="pinned-apps">Pinned</label>
+                <button>All apps ></button>
+              </div>
+              <div class="apps">
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/edge.png" />
+                  </div>
+                  <div class="app-name"><p>Edge</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img
+                      src="./images/Windows Icons/microsoft-office-2019-48.png"
+                    />
+                  </div>
+                  <div class="app-name"><p>Office</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/Microsoft Exel 2019.png" />
+                  </div>
+                  <div class="app-name"><p>Exel</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img
+                      src="./images/Windows Icons/Microsoft PowerPoint 2019.png"
+                    />
+                  </div>
+                  <div class="app-name"><p>Power Point</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/Microsoft Word 2019.png" />
+                  </div>
+                  <div class="app-name"><p>Word</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/Groove Music.png" />
+                  </div>
+                  <div class="app-name"><p>Music</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img
+                      src="./images/Windows Icons/Microsoft Outlook 2019.png"
+                    />
+                  </div>
+                  <div class="app-name"><p>Outlook</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/opera-48.png" />
+                  </div>
+                  <div class="app-name"><p>Opera</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img
+                      src="./images/Windows Icons/Microsoft Films & TV.png"
+                    />
+                  </div>
+                  <div class="app-name"><p>Movies</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/microsoft-cloud.png" />
+                  </div>
+                  <div class="app-name"><p>Cloud</p></div>
+                </div>
+                <div class="app">
+                  <div class="app-icon">
+                    <img src="./images/Windows Icons/microsoft-gallery.png" />
+                  </div>
+                  <div class="app-name"><p>Photos</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="recommended">
+              <div class="title">
+                <label for="pinned-apps">Recommended</label>
+                <button>More ></button>
+              </div>
+              <div class="recommend-list">
+                <div class="list-item">
+                  <div class="item-icon">
+                    <img src="./images/Windows Icons/Get Started App.png" />
+                  </div>
+                  <div class="item-details">
+                    <h4>Get Started</h4>
+                    <p>Welcome to Windows</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-menu-area">
+            <div class="user center">
+              <div class="user-icon">
+                <img
+                  src="./images/Windows Icons/Male User.png"
+                  style="height: 36px; margin: 4px"
+                />
+              </div>
+              <div class="user-name">
+                <p style="margin-bottom: 4px">Sonu Munda</p>
+              </div>
+            </div>
+            <div class="power-option">
+              <img src="./images/Windows Icons/ShutDown.png"/ style="height:
+              24px;">
+            </div>
+          </div>
+        </div>
+        <div class="taskbar">
+          <div class="taskbar-left"></div>
+          <div class="taskbar-center center">
+            <div class="taskbar-list center">
+              <div class="list-item" id="start" onclick="openStartMenu();">
+                <img src="./images/Windows Icons/Start.png" />
+              </div>
+              <div class="list-item" onclick="openStartMenu();">
+                <img
+                  src="./images/Windows Icons/magnifier-search-zoom_110300.png"
+                />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/task-view-48.png" />
+              </div>
+              <div class="list-item">
+                <img
+                  src="./images/Windows Icons/microsoft-office-2019-48.png"
+                />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/xplorer-48.png" />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/vs-code-48.png" />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/opera-48.png" />
+              </div>
+            </div>
+          </div>
+          <div class="taskbar-right">
+            <div class="right-list">
+              <div class="list-item">
+                <img src="./images/Windows Icons/collapse-arrow-30.png" />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/wifi-24.png" />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/sound-48.png" />
+              </div>
+              <div class="list-item">
+                <img src="./images/Windows Icons/battery-30.png" />
+              </div>
+              <div class="taskbar-date-time">
+                <div id="taskbar-time"></div>
+                <div id="taskbar-date"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
